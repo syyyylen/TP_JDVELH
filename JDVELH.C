@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
-	
+
+int position = 1; 
 	
 	struct Chapitre {
 
@@ -22,33 +22,23 @@ int main() {
 	Chapitre chapitre2 = {15, 5,"ceci est la description du second chapitre",2};
 	Chapitre chapitre3 = {20, 7,"ceci est la description du troisieme chapitre",3};
 
-	
-	/*int deplacement() {
+int deplacement() {
 		
-		printf ("Entrez 1 pour aller a premiere destination \n entrez 2 pour aller a deuxieme destination"); 
-	scanf("%d",&choix);
-	
-	if(choix==1){
-		printf ("vous etes arrive a la premiere destination");
-	}
-	else if(choix==2) {
-		printf ("vous etes arrive a la deuxieme destination");
-		
-		return 0 ; 
-	}*/
-	
-	//printf ("salut %d",chapitre1.numero);
+		/*printf("la fonction demarre et elle connait :");
+		printf("%d",chapitre1.gold);
+		printf("%d",position);*/
 
-	int deplacement(){
-		
+		printf("Choisissez dans quel chapitre aller : \n");
 		
 		
 		return 0 ;
 	}
+
+int main() {
 	
+	int move ;
+
+	move = deplacement() ; 
 	
 	
 }
-
-
-
