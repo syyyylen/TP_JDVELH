@@ -2,42 +2,83 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
-	
-	struct Objet {
 
-		int prix ;
-		char nom[20] ;
+int position = 0; 
+	
+	struct Chapitre {
+
+		int gold ;
+		int pv ;
+		char description[150];
+		//int id[10] ;
+		int numero;
+		
 	
 	};
 	
-	typedef struct Objet Objet ;
+	typedef struct Chapitre Chapitre ;
 	
-	Objet tunique = {5, "tunique"};
-	Objet dague = {8, "dague"};
-	Objet epee = {10, "epee"};
-	Objet bouclier = {15, "bouclier"};
-	Objet bottes = {5, "bottes"};
+	Chapitre chapitre1 = {10, 3,"ceci est la description du premier chapitre",1};
+	Chapitre chapitre2 = {15, 5,"ceci est la description du second chapitre",2};
+	Chapitre chapitre3 = {20, 7,"ceci est la description du troisieme chapitre",3};
+
+int deplacement() {
+		
+		int retour;
+		
+		/*printf("la fonction demarre et elle connait :");
+		printf("%d",chapitre1.gold);
+		printf("%d",position);*/
+
+		printf("Choisissez dans quel chapitre aller : \n");
+		
+		if(position = 1){
+			printf("-tapez 1 pour aller dans le chapitre 1 \n tapez 2 pour aller dans le chapitre 2 \n tapez 3 pour aller dans le chapitre 3 \n"); 
+		}
+		else if(position = 2){
+					printf("-tapez 0 pour aller dans le chapitre 0 \n tapez 2 pour aller dans le chapitre 2 \n tapez 3 pour aller dans le chapitre 3 \n"); 
+		}
+		else if(position = 3){
+					printf("-tapez 0 pour aller dans le chapitre 0 \n tapez 1 pour aller dans le chapitre 1 \n tapez 3 pour aller dans le chapitre 3 \n"); 
+		}
+		else if(position = 4){
+					printf("-tapez 0 pour aller dans le chapitre 0 \n tapez 1 pour aller dans le chapitre 1 \n tapez 2 pour aller dans le chapitre 2 \n"); 
+		}
+		
+		scanf("%d",retour); 
+		
+		return retour ;
+	}
+
+int main() {
+	
+	int move ; 
+	
+	printf("bienvenue dans le jeu dont vous etes le heros \n");
+
+	move = deplacement() ;
+	
+	if(move = 1){
+			printf("bienvenue dans le jeu dont vous etes le heros \n"); 
+			move = deplacement() ;
+		}
+		else if(move = 2){
+					printf("%n \n",chapitre1.description); 
+					move = deplacement() ;
+		}
+		else if(move = 3){
+					printf("%n \n",chapitre3.description); 
+					move = deplacement() ;
+		}
+		else if(move = 4){
+					printf("%n \n",chapitre3.description); 
+					move = deplacement() ;
+		}
 	
 	
 	
-	/*
-	printf ("inventaire : \n");
+
 	
-	printf ("-%s", tunique.nom );
-	printf (" / %d pieces \n",tunique.prix);
-	printf ("-%s", dague.nom );
-	printf (" / %d pieces \n",dague.prix);
-	
-	printf ("-%s", epee.nom );
-	printf (" / %d pieces \n",epee.prix);
-	printf ("-%s", bouclier.nom );
-	printf (" / %d pieces \n",bouclier.prix);
-	printf ("-%s", bottes.nom );
-	printf (" / %d pieces \n",bottes.prix);
-	*/
 	
 }
-
-
 
