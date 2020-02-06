@@ -4,14 +4,16 @@
 
 int main() {
 	
-	struct Objet {
+	/*struct Objet {
 
 		int prix ;
 		char nom[20] ;
 	
 	};
 	
-	typedef struct Objet Objet ;
+	typedef struct Objet Objet ;*/
+	
+	printf("test"); 
 	
 
 }
