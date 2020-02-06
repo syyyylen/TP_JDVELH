@@ -4,17 +4,19 @@
 
 int main() {
 	
-	/*struct Objet {
-
-		int prix ;
-		char nom[20] ;
 	
-	};
+	//printf("test");
 	
-	typedef struct Objet Objet ;*/
+	printf ("Entrez 1 pour aller a premiere destination\n entrez 2 pour aller a deuxieme destination"); 
+	scanf("%d",&choix);
 	
-	printf("test"); 
-	
+	if(choix==1){
+		printf ("vous etes arrive a la premiere destination");
+	}
+	else if(choix==2) {
+		printf ("vous etes arrive a la deuxieme destination");
+		
+	}
 
 }
 
